@@ -22,14 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelaInicialName.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvM-Kj-ZsO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelaInicialName" translatesAutoresizingMaskIntoConstraints="NO" id="cvM-Kj-ZsO">
                                 <rect key="frame" x="23" y="67" width="328" height="274"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="328" id="MCH-X6-P38"/>
                                     <constraint firstAttribute="height" constant="274" id="hM0-1p-bol"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelaInicialFoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="owE-sq-8TF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelaInicialFoto" translatesAutoresizingMaskIntoConstraints="NO" id="owE-sq-8TF">
                                 <rect key="frame" x="23" y="361" width="328" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="328" id="3LB-SV-lwS"/>
@@ -54,7 +54,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TelaInicialFoto.png" width="291" height="157"/>
-        <image name="TelaInicialName.png" width="295" height="223"/>
+        <image name="TelaInicialFoto" width="145" height="78"/>
+        <image name="TelaInicialName" width="147" height="111"/>
     </resources>
 </document>
