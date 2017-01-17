@@ -10,15 +10,7 @@ import UIKit
 
 class AdocaoTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var descricaoLabel: UILabel!
+    @IBOutlet weak var fotoImagemView: UIImageView!
 }

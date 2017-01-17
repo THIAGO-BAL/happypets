@@ -1,5 +1,5 @@
 //
-//  AdocaoTableViewController.swift
+//  ProfissionaisTableViewController.swift
 //  HappyPets
 //
 //  Created by Student on 1/17/17.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class AdocaoTableViewController: UITableViewController {
+class ProfissionaisTableViewController: UITableViewController {
 
-    var animais = [Animal]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,30 +29,23 @@ class AdocaoTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.animais.count
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "adocaoIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        if let animalCell = cell as? AdocaoTableViewCell {
-            
-            let animal = self.animais[indexPath.row]
-            
-            animalCell.nomeLabel.text = animal.nome
-            animalCell.descricaoLabel.text = animal.especie
-            animalCell.fotoImagemView.image = UIImage(named: animal.nomeDaFoto)
-            
-            return animalCell
-        }
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
