@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F76943F1E2E61130054642C /* PessoaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76943E1E2E61130054642C /* PessoaDAO.swift */; };
 		3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */; };
 		3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A81E2CF7A6007C2321 /* ViewController.swift */; };
 		3F96D3AC1E2CF7A6007C2321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */; };
@@ -15,9 +16,14 @@
 		3F96D3B41E2CF7A6007C2321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */; };
 		3F96D3BC1E2CF932007C2321 /* TelaInicialFoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3BB1E2CF932007C2321 /* TelaInicialFoto.png */; };
 		3F96D3BE1E2CF93F007C2321 /* TelaInicialName.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3BD1E2CF93F007C2321 /* TelaInicialName.png */; };
+		3FC4D4EB1E2E617A00D7AC76 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4EA1E2E617A00D7AC76 /* Usuario.swift */; };
+		3FC4D4ED1E2E629C00D7AC76 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4EC1E2E629C00D7AC76 /* Pessoa.swift */; };
+		3FC4D4EF1E2E641400D7AC76 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4EE1E2E641400D7AC76 /* Animal.swift */; };
+		3FC4D4F11E2E682B00D7AC76 /* Informativo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4F01E2E682B00D7AC76 /* Informativo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F76943E1E2E61130054642C /* PessoaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PessoaDAO.swift; sourceTree = "<group>"; };
 		3F96D3A31E2CF7A6007C2321 /* HappyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96D3A81E2CF7A6007C2321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,10 @@
 		3F96D3B51E2CF7A6007C2321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F96D3BB1E2CF932007C2321 /* TelaInicialFoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TelaInicialFoto.png; sourceTree = "<group>"; };
 		3F96D3BD1E2CF93F007C2321 /* TelaInicialName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TelaInicialName.png; sourceTree = "<group>"; };
+		3FC4D4EA1E2E617A00D7AC76 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3FC4D4EC1E2E629C00D7AC76 /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
+		3FC4D4EE1E2E641400D7AC76 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		3FC4D4F01E2E682B00D7AC76 /* Informativo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Informativo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F76943B1E2E58410054642C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F7694401E2E612D0054642C /* Static Classes */,
+				3F76943D1E2E584E0054642C /* VO */,
+				3F76943C1E2E58480054642C /* DAO */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F76943C1E2E58480054642C /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3F76943E1E2E61130054642C /* PessoaDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		3F76943D1E2E584E0054642C /* VO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		3F7694401E2E612D0054642C /* Static Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4D4EA1E2E617A00D7AC76 /* Usuario.swift */,
+				3FC4D4EC1E2E629C00D7AC76 /* Pessoa.swift */,
+				3FC4D4EE1E2E641400D7AC76 /* Animal.swift */,
+				3FC4D4F01E2E682B00D7AC76 /* Informativo.swift */,
+			);
+			name = "Static Classes";
+			sourceTree = "<group>";
+		};
 		3F96D39A1E2CF7A6007C2321 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +106,7 @@
 		3F96D3A51E2CF7A6007C2321 /* HappyPets */ = {
 			isa = PBXGroup;
 			children = (
+				3F76943B1E2E58410054642C /* Model */,
 				3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */,
 				3F96D3A81E2CF7A6007C2321 /* ViewController.swift */,
 				3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */,
@@ -148,7 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */,
+				3F76943F1E2E61130054642C /* PessoaDAO.swift in Sources */,
+				3FC4D4F11E2E682B00D7AC76 /* Informativo.swift in Sources */,
 				3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */,
+				3FC4D4EB1E2E617A00D7AC76 /* Usuario.swift in Sources */,
+				3FC4D4EF1E2E641400D7AC76 /* Animal.swift in Sources */,
+				3FC4D4ED1E2E629C00D7AC76 /* Pessoa.swift in Sources */,
 				3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +363,7 @@
 				3F96D3BA1E2CF7A6007C2321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
