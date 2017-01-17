@@ -13,6 +13,8 @@
 		3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3AD1E2CF7A6007C2321 /* HappyPets.xcdatamodeld */; };
 		3F96D3B11E2CF7A6007C2321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */; };
 		3F96D3B41E2CF7A6007C2321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */; };
+		3FCEE96A1E2E4C1100B10AFF /* AdocaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE9691E2E4C1100B10AFF /* AdocaoTableViewController.swift */; };
+		3FCEE96C1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEE96B1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F96D3B31E2CF7A6007C2321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F96D3B51E2CF7A6007C2321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCEE9691E2E4C1100B10AFF /* AdocaoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdocaoTableViewController.swift; sourceTree = "<group>"; };
+		3FCEE96B1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdocaoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		3F96D3A51E2CF7A6007C2321 /* HappyPets */ = {
 			isa = PBXGroup;
 			children = (
-				3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */,
+				3FCEE9681E2E4B8F00B10AFF /* Supporting Files */,
 				3F96D3A81E2CF7A6007C2321 /* ViewController.swift */,
 				3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */,
+				3FCEE9691E2E4C1100B10AFF /* AdocaoTableViewController.swift */,
+				3FCEE96B1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift */,
 				3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */,
-				3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */,
-				3F96D3B51E2CF7A6007C2321 /* Info.plist */,
 				3F96D3AD1E2CF7A6007C2321 /* HappyPets.xcdatamodeld */,
 			);
 			path = HappyPets;
+			sourceTree = "<group>";
+		};
+		3FCEE9681E2E4B8F00B10AFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */,
+				3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */,
+				3F96D3B51E2CF7A6007C2321 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCEE96C1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift in Sources */,
+				3FCEE96A1E2E4C1100B10AFF /* AdocaoTableViewController.swift in Sources */,
 				3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */,
 				3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */,
 				3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */,
