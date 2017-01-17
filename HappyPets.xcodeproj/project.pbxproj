@@ -13,6 +13,8 @@
 		3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3AD1E2CF7A6007C2321 /* HappyPets.xcdatamodeld */; };
 		3F96D3B11E2CF7A6007C2321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */; };
 		3F96D3B41E2CF7A6007C2321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */; };
+		3F96D3BC1E2CF932007C2321 /* TelaInicialFoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3BB1E2CF932007C2321 /* TelaInicialFoto.png */; };
+		3F96D3BE1E2CF93F007C2321 /* TelaInicialName.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3BD1E2CF93F007C2321 /* TelaInicialName.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F96D3B31E2CF7A6007C2321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F96D3B51E2CF7A6007C2321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F96D3BB1E2CF932007C2321 /* TelaInicialFoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TelaInicialFoto.png; sourceTree = "<group>"; };
+		3F96D3BD1E2CF93F007C2321 /* TelaInicialName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TelaInicialName.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */,
 				3F96D3B01E2CF7A6007C2321 /* Assets.xcassets */,
 				3F96D3B21E2CF7A6007C2321 /* LaunchScreen.storyboard */,
+				3F96D3BD1E2CF93F007C2321 /* TelaInicialName.png */,
+				3F96D3BB1E2CF932007C2321 /* TelaInicialFoto.png */,
 				3F96D3B51E2CF7A6007C2321 /* Info.plist */,
 				3F96D3AD1E2CF7A6007C2321 /* HappyPets.xcdatamodeld */,
 			);
@@ -126,7 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F96D3BE1E2CF93F007C2321 /* TelaInicialName.png in Resources */,
 				3F96D3B41E2CF7A6007C2321 /* LaunchScreen.storyboard in Resources */,
+				3F96D3BC1E2CF932007C2321 /* TelaInicialFoto.png in Resources */,
 				3F96D3B11E2CF7A6007C2321 /* Assets.xcassets in Resources */,
 				3F96D3AC1E2CF7A6007C2321 /* Main.storyboard in Resources */,
 			);
