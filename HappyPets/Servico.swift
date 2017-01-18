@@ -11,8 +11,9 @@ import Foundation
 class Servico:Informativo {
     var preco: Float
     
-    init(preco: Float){
+    init(preco: Float, autor: Usuario, descricao: String){
         self.preco = preco
+        super.init(data_criacao: Date(), data_atualizacao: Date(), autor: autor, descricao: descricao)
     }
 
 }
