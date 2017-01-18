@@ -46,8 +46,8 @@ class AnimalDAO {
     
     static func getLista() -> [Animal] {
         return [
-            Animal(nome: "Animal 1", descricao: "Descrição do animal", nomeDaFoto: "cachorro1", idade: 4, sexo: "Macho", porte: "Grande", especie: "Cachorro", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
-            Animal(nome: "Animal 2", descricao: "Descrição do segundo animal", nomeDaFoto: "gato1", idade: 2, sexo: "Fêmea", porte: "Pequeno", especie: "Gato", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
+            Animal(nome: "Animal 1", descricao: "Descrição do animal", nomeDaFoto: "animalgenerico", idade: 4, sexo: "Macho", porte: "Grande", especie: "Cachorro", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
+            Animal(nome: "Animal 2", descricao: "Descrição do segundo animal", nomeDaFoto: "animalgenerico", idade: 2, sexo: "Fêmea", porte: "Pequeno", especie: "Gato", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
         ]
     }
 }
