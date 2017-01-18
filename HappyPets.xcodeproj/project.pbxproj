@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F04635B1E2F9352007232D0 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463521E2F9352007232D0 /* Comentario.swift */; };
-		3F04635C1E2F9352007232D0 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463531E2F9352007232D0 /* Endereco.swift */; };
-		3F04635D1E2F9352007232D0 /* Informativo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463541E2F9352007232D0 /* Informativo.swift */; };
-		3F04635E1E2F9352007232D0 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463551E2F9352007232D0 /* Notificacao.swift */; };
-		3F04635F1E2F9352007232D0 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463561E2F9352007232D0 /* Pessoa.swift */; };
-		3F0463601E2F9352007232D0 /* PessoaJuridica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463571E2F9352007232D0 /* PessoaJuridica.swift */; };
-		3F0463611E2F9352007232D0 /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463581E2F9352007232D0 /* Servico.swift */; };
-		3F0463621E2F9352007232D0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463591E2F9352007232D0 /* Usuario.swift */; };
 		3F0463641E2FA0F8007232D0 /* DetalhesAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463631E2FA0F8007232D0 /* DetalhesAnimalViewController.swift */; };
+		3F04636B1E2FA304007232D0 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463651E2FA304007232D0 /* Comentario.swift */; };
+		3F04636C1E2FA304007232D0 /* Informativo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463661E2FA304007232D0 /* Informativo.swift */; };
+		3F04636D1E2FA304007232D0 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463671E2FA304007232D0 /* Notificacao.swift */; };
+		3F04636E1E2FA304007232D0 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463681E2FA304007232D0 /* Pessoa.swift */; };
+		3F04636F1E2FA304007232D0 /* PessoaJuridica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463691E2FA304007232D0 /* PessoaJuridica.swift */; };
+		3F0463701E2FA304007232D0 /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04636A1E2FA304007232D0 /* Servico.swift */; };
+		3F0463721E2FA336007232D0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463711E2FA336007232D0 /* Usuario.swift */; };
 		3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */; };
 		3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A81E2CF7A6007C2321 /* ViewController.swift */; };
 		3F96D3AC1E2CF7A6007C2321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */; };
@@ -30,15 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F0463521E2F9352007232D0 /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comentario.swift; path = ../../../Downloads/happypets/HappyPets/Comentario.swift; sourceTree = "<group>"; };
-		3F0463531E2F9352007232D0 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Endereco.swift; path = ../../../Downloads/happypets/HappyPets/Endereco.swift; sourceTree = "<group>"; };
-		3F0463541E2F9352007232D0 /* Informativo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Informativo.swift; path = ../../../Downloads/happypets/HappyPets/Informativo.swift; sourceTree = "<group>"; };
-		3F0463551E2F9352007232D0 /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notificacao.swift; path = ../../../Downloads/happypets/HappyPets/Notificacao.swift; sourceTree = "<group>"; };
-		3F0463561E2F9352007232D0 /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pessoa.swift; path = ../../../Downloads/happypets/HappyPets/Pessoa.swift; sourceTree = "<group>"; };
-		3F0463571E2F9352007232D0 /* PessoaJuridica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PessoaJuridica.swift; path = ../../../Downloads/happypets/HappyPets/PessoaJuridica.swift; sourceTree = "<group>"; };
-		3F0463581E2F9352007232D0 /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Servico.swift; path = ../../../Downloads/happypets/HappyPets/Servico.swift; sourceTree = "<group>"; };
-		3F0463591E2F9352007232D0 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = ../../../Downloads/happypets/HappyPets/Usuario.swift; sourceTree = "<group>"; };
 		3F0463631E2FA0F8007232D0 /* DetalhesAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesAnimalViewController.swift; sourceTree = "<group>"; };
+		3F0463651E2FA304007232D0 /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comentario.swift; path = HappyPets/Comentario.swift; sourceTree = "<group>"; };
+		3F0463661E2FA304007232D0 /* Informativo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Informativo.swift; path = HappyPets/Informativo.swift; sourceTree = "<group>"; };
+		3F0463671E2FA304007232D0 /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notificacao.swift; path = HappyPets/Notificacao.swift; sourceTree = "<group>"; };
+		3F0463681E2FA304007232D0 /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pessoa.swift; path = HappyPets/Pessoa.swift; sourceTree = "<group>"; };
+		3F0463691E2FA304007232D0 /* PessoaJuridica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PessoaJuridica.swift; path = HappyPets/PessoaJuridica.swift; sourceTree = "<group>"; };
+		3F04636A1E2FA304007232D0 /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Servico.swift; path = HappyPets/Servico.swift; sourceTree = "<group>"; };
+		3F0463711E2FA336007232D0 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = HappyPets/Usuario.swift; sourceTree = "<group>"; };
 		3F96D3A31E2CF7A6007C2321 /* HappyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96D3A81E2CF7A6007C2321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,15 +66,14 @@
 		3F0463501E2F931D007232D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F0463711E2FA336007232D0 /* Usuario.swift */,
+				3F0463651E2FA304007232D0 /* Comentario.swift */,
+				3F0463661E2FA304007232D0 /* Informativo.swift */,
+				3F0463671E2FA304007232D0 /* Notificacao.swift */,
+				3F0463681E2FA304007232D0 /* Pessoa.swift */,
+				3F0463691E2FA304007232D0 /* PessoaJuridica.swift */,
+				3F04636A1E2FA304007232D0 /* Servico.swift */,
 				3F9B428E1E2E5C2B005E0582 /* Animal.swift */,
-				3F0463521E2F9352007232D0 /* Comentario.swift */,
-				3F0463531E2F9352007232D0 /* Endereco.swift */,
-				3F0463541E2F9352007232D0 /* Informativo.swift */,
-				3F0463551E2F9352007232D0 /* Notificacao.swift */,
-				3F0463561E2F9352007232D0 /* Pessoa.swift */,
-				3F0463571E2F9352007232D0 /* PessoaJuridica.swift */,
-				3F0463581E2F9352007232D0 /* Servico.swift */,
-				3F0463591E2F9352007232D0 /* Usuario.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,23 +210,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0463721E2FA336007232D0 /* Usuario.swift in Sources */,
+				3F04636D1E2FA304007232D0 /* Notificacao.swift in Sources */,
 				3FCEE96C1E2E4C2B00B10AFF /* AdocaoTableViewCell.swift in Sources */,
+				3F0463701E2FA304007232D0 /* Servico.swift in Sources */,
+				3F04636E1E2FA304007232D0 /* Pessoa.swift in Sources */,
 				3F0463641E2FA0F8007232D0 /* DetalhesAnimalViewController.swift in Sources */,
 				3F9B428F1E2E5C2B005E0582 /* Animal.swift in Sources */,
 				3FCEE96A1E2E4C1100B10AFF /* AdocaoTableViewController.swift in Sources */,
-				3F0463611E2F9352007232D0 /* Servico.swift in Sources */,
-				3F0463621E2F9352007232D0 /* Usuario.swift in Sources */,
+				3F04636B1E2FA304007232D0 /* Comentario.swift in Sources */,
 				3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */,
-				3F04635B1E2F9352007232D0 /* Comentario.swift in Sources */,
-				3F0463601E2F9352007232D0 /* PessoaJuridica.swift in Sources */,
 				3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */,
-				3F04635D1E2F9352007232D0 /* Informativo.swift in Sources */,
+				3F04636C1E2FA304007232D0 /* Informativo.swift in Sources */,
 				3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */,
-				3F04635E1E2F9352007232D0 /* Notificacao.swift in Sources */,
+				3F04636F1E2FA304007232D0 /* PessoaJuridica.swift in Sources */,
 				3F9B428A1E2E5A25005E0582 /* ProfissionaisTableViewCell.swift in Sources */,
-				3F04635C1E2F9352007232D0 /* Endereco.swift in Sources */,
 				3F9B42881E2E5A11005E0582 /* ProfissionaisTableViewController.swift in Sources */,
-				3F04635F1E2F9352007232D0 /* Pessoa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
