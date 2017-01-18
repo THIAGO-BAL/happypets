@@ -100,13 +100,21 @@ class AdocaoTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        /*
         if segue.identifier == "mostraDetalhesAnimais" {
             if let viewAnimais = segue.destination as? DetalhesAnimalViewController {
-                ;
+                if let indexPath = self.tableView.indexPathForSelectedRow {
+                    let animal = self.animais[indexPath.row]
+                    viewAnimais.animal = animal
+                }
+                
+                /*
+                let index = self.tableView.indexPathForSelectedRow?.row
+                print(index ?? 1)
+                let animal = self.animais[index!]
+                viewAnimais.animal = animal
+                */
             }
         }
-        */
     }
 
 }
