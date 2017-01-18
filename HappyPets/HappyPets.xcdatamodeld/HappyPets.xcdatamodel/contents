@@ -11,7 +11,7 @@
         <relationship name="autor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="comentarios" inverseEntity="Usuario" syncable="YES"/>
         <relationship name="informativo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Informativo" inverseName="comentarios" inverseEntity="Informativo" syncable="YES"/>
     </entity>
-    <entity name="Endereco" representedClassName="Endereco" syncable="YES" codeGenerationType="class"/>
+    <entity name="Endereco" representedClassName=".Endereco" syncable="YES"/>
     <entity name="Informativo" representedClassName=".Informativo" syncable="YES">
         <attribute name="data_atualizacao" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="data_criacao" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -19,7 +19,7 @@
         <relationship name="autor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="informativos" inverseEntity="Usuario" syncable="YES"/>
         <relationship name="comentarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comentario" inverseName="informativo" inverseEntity="Comentario" syncable="YES"/>
     </entity>
-    <entity name="Notificacao" representedClassName="Notificacao" syncable="YES" codeGenerationType="class">
+    <entity name="Notificacao" representedClassName=".Notificacao" syncable="YES">
         <attribute name="data_atualizacao" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="data_criacao" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="notificacao_lida" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -29,12 +29,11 @@
         <attribute name="data_nascimento" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="PessoaJuridica" representedClassName="PessoaJuridica" parentEntity="Usuario" syncable="YES" codeGenerationType="class"/>
-    <entity name="PetShop" representedClassName="PetShop" parentEntity="Usuario" syncable="YES" codeGenerationType="class">
-        <attribute name="attribute" optional="YES" syncable="YES"/>
+    <entity name="PessoaJuridica" representedClassName=".PessoaJuridica" parentEntity="Usuario" syncable="YES"/>
+    <entity name="PetShop" representedClassName=".PetShop" parentEntity="Usuario" syncable="YES">
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Servico" representedClassName="Servico" parentEntity="Informativo" syncable="YES" codeGenerationType="class">
+    <entity name="Servico" representedClassName=".Servico" parentEntity="Informativo" syncable="YES">
         <attribute name="preco" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="Usuario" representedClassName=".Usuario" isAbstract="YES" syncable="YES">
@@ -50,15 +49,15 @@
         <relationship name="notificacoes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notificacao" inverseName="autor" inverseEntity="Notificacao" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="195"/>
-        <element name="Pessoa" positionX="-54" positionY="-9" width="128" height="75"/>
-        <element name="PetShop" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="Animal" positionX="-18" positionY="27" width="128" height="105"/>
-        <element name="Endereco" positionX="0" positionY="45" width="128" height="45"/>
-        <element name="Notificacao" positionX="18" positionY="63" width="128" height="105"/>
-        <element name="Informativo" positionX="36" positionY="81" width="128" height="120"/>
-        <element name="Servico" positionX="-9" positionY="36" width="128" height="60"/>
         <element name="Comentario" positionX="0" positionY="45" width="128" height="90"/>
+        <element name="Endereco" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="Informativo" positionX="36" positionY="81" width="128" height="120"/>
+        <element name="Notificacao" positionX="18" positionY="63" width="128" height="105"/>
+        <element name="Pessoa" positionX="-54" positionY="-9" width="128" height="75"/>
         <element name="PessoaJuridica" positionX="9" positionY="99" width="128" height="45"/>
+        <element name="PetShop" positionX="-36" positionY="9" width="128" height="60"/>
+        <element name="Servico" positionX="-9" positionY="36" width="128" height="60"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="195"/>
     </elements>
 </model>

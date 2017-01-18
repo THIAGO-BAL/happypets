@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3F76943F1E2E61130054642C /* PessoaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76943E1E2E61130054642C /* PessoaDAO.swift */; };
+		3F8FDAE71E2F8639009A6CD8 /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FDAE61E2F8639009A6CD8 /* Servico.swift */; };
+		3F8FDAE91E2F884A009A6CD8 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FDAE81E2F884A009A6CD8 /* Notificacao.swift */; };
+		3F8FDAEB1E2F8C46009A6CD8 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FDAEA1E2F8C46009A6CD8 /* Endereco.swift */; };
+		3F8FDAED1E2F8CC4009A6CD8 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FDAEC1E2F8CC4009A6CD8 /* Comentario.swift */; };
+		3F8FDAEF1E2F8D8B009A6CD8 /* PessoaJuridica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FDAEE1E2F8D8B009A6CD8 /* PessoaJuridica.swift */; };
 		3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */; };
 		3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A81E2CF7A6007C2321 /* ViewController.swift */; };
 		3F96D3AC1E2CF7A6007C2321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 
 /* Begin PBXFileReference section */
 		3F76943E1E2E61130054642C /* PessoaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PessoaDAO.swift; sourceTree = "<group>"; };
+		3F8FDAE61E2F8639009A6CD8 /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
+		3F8FDAE81E2F884A009A6CD8 /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacao.swift; sourceTree = "<group>"; };
+		3F8FDAEA1E2F8C46009A6CD8 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		3F8FDAEC1E2F8CC4009A6CD8 /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3F8FDAEE1E2F8D8B009A6CD8 /* PessoaJuridica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PessoaJuridica.swift; sourceTree = "<group>"; };
 		3F96D3A31E2CF7A6007C2321 /* HappyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96D3A81E2CF7A6007C2321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 				3FC4D4EC1E2E629C00D7AC76 /* Pessoa.swift */,
 				3FC4D4EE1E2E641400D7AC76 /* Animal.swift */,
 				3FC4D4F01E2E682B00D7AC76 /* Informativo.swift */,
+				3F8FDAE61E2F8639009A6CD8 /* Servico.swift */,
+				3F8FDAE81E2F884A009A6CD8 /* Notificacao.swift */,
+				3F8FDAEA1E2F8C46009A6CD8 /* Endereco.swift */,
+				3F8FDAEC1E2F8CC4009A6CD8 /* Comentario.swift */,
+				3F8FDAEE1E2F8D8B009A6CD8 /* PessoaJuridica.swift */,
 			);
 			name = "Static Classes";
 			sourceTree = "<group>";
@@ -194,12 +209,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8FDAED1E2F8CC4009A6CD8 /* Comentario.swift in Sources */,
 				3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */,
+				3F8FDAEF1E2F8D8B009A6CD8 /* PessoaJuridica.swift in Sources */,
 				3F76943F1E2E61130054642C /* PessoaDAO.swift in Sources */,
+				3F8FDAE91E2F884A009A6CD8 /* Notificacao.swift in Sources */,
 				3FC4D4F11E2E682B00D7AC76 /* Informativo.swift in Sources */,
 				3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */,
 				3FC4D4EB1E2E617A00D7AC76 /* Usuario.swift in Sources */,
+				3F8FDAE71E2F8639009A6CD8 /* Servico.swift in Sources */,
 				3FC4D4EF1E2E641400D7AC76 /* Animal.swift in Sources */,
+				3F8FDAEB1E2F8C46009A6CD8 /* Endereco.swift in Sources */,
 				3FC4D4ED1E2E629C00D7AC76 /* Pessoa.swift in Sources */,
 				3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */,
 			);
