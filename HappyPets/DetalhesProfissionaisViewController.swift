@@ -27,7 +27,7 @@ class DetalhesProfissionaisViewController: UIViewController {
         descricaoLabel.text = profissional?.descricao
         telefoneLabel.text = profissional?.telefone
         emailLabel.text = profissional?.email
-        siteLabel.text = profissional?.site
+        siteLabel.text = profissional?.endereco
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,9 +40,9 @@ class DetalhesProfissionaisViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "mostraLocalizacaoProfissionais" {
+        if segue.identifier == "mostraLocalizacaoProfissional" {
             if let viewLocalizacao = segue.destination as? LocalizacaoViewController {
-                viewLocalizacao.nome = nomeLabel.text
+                viewLocalizacao.profissional = profissional
             }
         }
     }

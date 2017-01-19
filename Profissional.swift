@@ -15,15 +15,21 @@ class Profissional {
     var descricao: String
     var telefone: String
     var email: String
-    var site: String
+    var endereco: String
     
-    init(imagem: String, nome: String, descricao: String, telefone: String, email: String, site: String) {
+    var latitude: Double
+    var longitude: Double
+    
+    init(imagem: String, nome: String, descricao: String, telefone: String, email: String, endereco: String, latitude: Double, longitude: Double) {
         self.imagem = imagem
         self.nome = nome
         self.descricao = descricao
         self.telefone = telefone
         self.email = email
-        self.site = site
+        self.endereco = endereco
+        
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
 
@@ -31,7 +37,7 @@ class ProfissionalDAO {
     
     static func getLista() -> [Profissional] {
         return [
-            Profissional(imagem: "profissionalgenerico", nome: "Ong tal", descricao: "Somos uma ong...", telefone: "(63) 3224-3456", email: "ong@exemplo.com", site: "ongtal.ong.br"),
+            Profissional(imagem: "profissionalgenerico", nome: "Ong tal", descricao: "Somos uma ong...", telefone: "(63) 3224-3456", email: "ong@exemplo.com", endereco: "403 norte, alameda 4, n. 8", latitude: -10.178513, longitude: -48.361647),
         ]
     }
 }

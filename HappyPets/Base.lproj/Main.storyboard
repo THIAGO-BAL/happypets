@@ -426,52 +426,58 @@
                                 <rect key="frame" x="24" y="72" width="327" height="538"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-oU-doF">
-                                        <rect key="frame" x="38.5" y="0.0" width="250" height="180"/>
+                                        <rect key="frame" x="63.5" y="0.0" width="200" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="JgD-4j-7Ek"/>
-                                            <constraint firstAttribute="height" constant="180" id="LdH-uH-0qK"/>
+                                            <constraint firstAttribute="height" constant="200" id="aSH-2f-S4J"/>
+                                            <constraint firstAttribute="width" constant="200" id="zxP-OH-m4H"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GB0-1E-CMg">
-                                        <rect key="frame" x="0.0" y="180" width="327" height="358"/>
+                                        <rect key="frame" x="0.0" y="200" width="327" height="338"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-EA-vmp">
-                                                <rect key="frame" x="123.5" y="0.0" width="80" height="65"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="80" height="49.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriçāo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwU-JX-KkW">
-                                                <rect key="frame" x="125" y="73" width="77" height="65.5"/>
+                                                <rect key="frame" x="125" y="57.5" width="77" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1h-iM-bJ0">
-                                                <rect key="frame" x="131" y="146.5" width="65.5" height="65"/>
+                                                <rect key="frame" x="131" y="115.5" width="65.5" height="49.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ul-fn-IRD">
-                                                <rect key="frame" x="143" y="219.5" width="41" height="65.5"/>
+                                                <rect key="frame" x="143" y="173" width="41" height="49.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2r-H4-Ccp">
-                                                <rect key="frame" x="149" y="293" width="29.5" height="65"/>
+                                                <rect key="frame" x="149" y="230.5" width="29.5" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-6d-pf9">
+                                                <rect key="frame" x="80" y="288.5" width="167" height="49.5"/>
+                                                <state key="normal" title="Ver localização no mapa"/>
+                                                <connections>
+                                                    <segue destination="sMM-cC-5eg" kind="show" identifier="mostraLocalizacaoProfissional" id="6rK-FF-QPS"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="GB0-1E-CMg" firstAttribute="leading" secondItem="ZXF-lw-Sqv" secondAttribute="leading" id="gzR-fZ-hSS"/>
                                     <constraint firstAttribute="trailing" secondItem="GB0-1E-CMg" secondAttribute="trailing" id="k5Z-ql-Iu7"/>
-                                    <constraint firstItem="GB0-1E-CMg" firstAttribute="top" secondItem="WTn-oU-doF" secondAttribute="bottom" id="sH3-1f-PrO"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -483,18 +489,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZXF-lw-Sqv" secondAttribute="trailing" constant="8" id="cPO-uM-hW6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detalhes" id="m3U-rh-VIo">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="ALD-Gc-mSV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2jx-ox-j1x">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Localização"/>
-                            </button>
-                            <connections>
-                                <segue destination="sMM-cC-5eg" kind="show" identifier="mostraLocalizacaoProfissionais" id="EmQ-Ah-FxJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Detalhes" id="m3U-rh-VIo"/>
                     <connections>
                         <outlet property="descricaoLabel" destination="xwU-JX-KkW" id="NgW-5Z-PQ5"/>
                         <outlet property="emailLabel" destination="2ul-fn-IRD" id="Sea-GS-rEA"/>
