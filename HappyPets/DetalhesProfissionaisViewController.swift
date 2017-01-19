@@ -9,11 +9,25 @@
 import UIKit
 
 class DetalhesProfissionaisViewController: UIViewController {
+    
+    var profissional: Profissional?
 
+    @IBOutlet weak var fotoImageView: UIImageView!
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var descricaoLabel: UILabel!
+    @IBOutlet weak var telefoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var siteLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        fotoImageView.image = UIImage(named: (profissional?.imagem)!)
+        nomeLabel.text = profissional?.nome
+        descricaoLabel.text = profissional?.descricao
+        telefoneLabel.text = profissional?.telefone
+        emailLabel.text = profissional?.email
+        siteLabel.text = profissional?.site
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +36,14 @@ class DetalhesProfissionaisViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "mostraLocalizacaoProfissionais" {
+            if let viewLocalizacao = segue.destination as? LocalizacaoViewController {
+                viewLocalizacao.nome = nomeLabel.text
+            }
+        }
     }
-    */
-
 }

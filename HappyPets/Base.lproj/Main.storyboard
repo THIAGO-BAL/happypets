@@ -339,16 +339,16 @@
             </objects>
             <point key="canvasLocation" x="3977" y="-700"/>
         </scene>
-        <!--Profissionais-->
+        <!--Serviços-->
         <scene sceneID="0Lj-uz-tf9">
             <objects>
-                <tableViewController id="kMS-7B-Wc9" sceneMemberID="viewController">
+                <tableViewController id="kMS-7B-Wc9" customClass="ProfissionaisTableViewController" customModule="HappyPets" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="5ei-tn-DSA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="WCy-GU-IkP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profissionaisIdentifier" rowHeight="120" id="WCy-GU-IkP" customClass="ProfissionaisTableViewCell" customModule="HappyPets" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCy-GU-IkP" id="1zw-Hj-oLV">
@@ -360,6 +360,10 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-21-1Wr">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="FwH-Qe-uLw"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Gre-Qb-HCI"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-HV-Sgt">
                                                     <rect key="frame" x="108" y="0.0" width="251" height="49"/>
@@ -388,6 +392,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descricaoLabel" destination="G9c-pS-x5h" id="F3c-2U-2FX"/>
+                                    <outlet property="fotoImageView" destination="5Yf-21-1Wr" id="T39-qZ-UOZ"/>
+                                    <outlet property="nomeLabel" destination="2op-Iu-fNH" id="6od-xM-c36"/>
                                     <segue destination="fcZ-fj-yjs" kind="show" identifier="mostraDetalhesProfissionais" id="Nqz-dy-JWz"/>
                                 </connections>
                             </tableViewCell>
@@ -397,7 +404,7 @@
                             <outlet property="delegate" destination="kMS-7B-Wc9" id="Ba6-pb-WYY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Profissionais" id="lF4-P1-ALc"/>
+                    <navigationItem key="navigationItem" title="Serviços" id="lF4-P1-ALc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axy-Il-m3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -406,7 +413,7 @@
         <!--Detalhes-->
         <scene sceneID="Gl1-hn-udt">
             <objects>
-                <viewController id="fcZ-fj-yjs" sceneMemberID="viewController">
+                <viewController id="fcZ-fj-yjs" customClass="DetalhesProfissionaisViewController" customModule="HappyPets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="leY-ry-XFW"/>
                         <viewControllerLayoutGuide type="bottom" id="8TV-6H-WLp"/>
@@ -484,10 +491,18 @@
                                 <state key="normal" title="Localização"/>
                             </button>
                             <connections>
-                                <segue destination="sMM-cC-5eg" kind="show" id="EmQ-Ah-FxJ"/>
+                                <segue destination="sMM-cC-5eg" kind="show" identifier="mostraLocalizacaoProfissionais" id="EmQ-Ah-FxJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descricaoLabel" destination="xwU-JX-KkW" id="NgW-5Z-PQ5"/>
+                        <outlet property="emailLabel" destination="2ul-fn-IRD" id="Sea-GS-rEA"/>
+                        <outlet property="fotoImageView" destination="WTn-oU-doF" id="S4e-eE-jds"/>
+                        <outlet property="nomeLabel" destination="D9b-EA-vmp" id="cZD-jB-eEN"/>
+                        <outlet property="siteLabel" destination="M2r-H4-Ccp" id="NIm-NO-pGs"/>
+                        <outlet property="telefoneLabel" destination="U1h-iM-bJ0" id="NAN-Cb-y95"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgJ-5W-N1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -496,7 +511,7 @@
         <!--Localização-->
         <scene sceneID="3Q5-nA-6X0">
             <objects>
-                <viewController id="sMM-cC-5eg" sceneMemberID="viewController">
+                <viewController id="sMM-cC-5eg" customClass="LocalizacaoViewController" customModule="HappyPets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jmb-RA-MiO"/>
                         <viewControllerLayoutGuide type="bottom" id="5Mo-YN-T03"/>
@@ -504,9 +519,23 @@
                     <view key="view" contentMode="scaleToFill" id="qbl-J2-7HL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-Eq-MEp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hCA-Eq-MEp" secondAttribute="trailing" id="I72-fV-8ch"/>
+                            <constraint firstItem="5Mo-YN-T03" firstAttribute="top" secondItem="hCA-Eq-MEp" secondAttribute="bottom" id="Xzu-8Z-Is6"/>
+                            <constraint firstItem="hCA-Eq-MEp" firstAttribute="leading" secondItem="qbl-J2-7HL" secondAttribute="leading" id="hri-RY-1nf"/>
+                            <constraint firstItem="hCA-Eq-MEp" firstAttribute="top" secondItem="jmb-RA-MiO" secondAttribute="bottom" id="iLt-sZ-nhQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Localização" id="dn9-qG-NMw"/>
+                    <connections>
+                        <outlet property="localizacaoMapView" destination="hCA-Eq-MEp" id="OVF-oG-Tfr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Cn-eI-UYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

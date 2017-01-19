@@ -46,8 +46,21 @@ class AnimalDAO {
     
     static func getLista() -> [Animal] {
         return [
-            Animal(nome: "Animal 1", descricao: "Descrição do animal", nomeDaFoto: "animalgenerico", idade: 4, sexo: "Macho", porte: "Grande", especie: "Cachorro", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
-            Animal(nome: "Animal 2", descricao: "Descrição do segundo animal", nomeDaFoto: "animalgenerico", idade: 2, sexo: "Fêmea", porte: "Pequeno", especie: "Gato", usuario:"fulano1", telefone: "6384416747", whatsapp:"6384416747", endereco: "avenue7" ),
+            
+            Animal(nome: "Adam", descricao: "Cão dócio. Necessita de cuidados urgentes", nomeDaFoto: "fotoAdam", idade: 4, sexo: "Macho", porte: "Grande", especie: "Cachorro", usuario:"Ana", telefone: "6399416747", whatsapp:"6399416747", endereco: "Qd 304 norte, alameda 01" ),
+            
+            Animal(nome: "Minie", descricao: "Esta um pouco magra e desidratada", nomeDaFoto: "fotoMinie", idade: 2, sexo: "Fêmea", porte: "Pequeno", especie: "Gata", usuario:"Claudinha", telefone: "63981412247", whatsapp:"63981412247", endereco: "Qd 208 Sul, alameda 20" ),
+            
+            Animal(nome: "Bola", descricao: "Necessita de um dono cuidadoso", nomeDaFoto: "fotoBola", idade: 5, sexo: "Macho", porte: "Pequeno", especie: "Gato", usuario:"Willian", telefone: "63999235643", whatsapp:"63999235643", endereco: "Qd 103 Norte, alameda 20" ),
+            
+            Animal(nome: "Barão", descricao: "Bem tratado. Procuramos um novo dono pra ele ", nomeDaFoto: "fotoBarao", idade: 5, sexo: "Macho", porte: "Grande", especie: "Cão", usuario:"Josué", telefone: "6381410008", whatsapp:"6381410008", endereco: "Qd 1005 Sul, alameda 43" ),
+            
+            Animal(nome: "Dori", descricao: "Precisa de um novo dono. Vamos mudar de país", nomeDaFoto: "fotoDori", idade: 2, sexo: "Fêmea", porte: "Pequeno", especie: "Peixe", usuario:"Familia Lula", telefone: "63984822225", whatsapp:"63984822225", endereco: "Qd 104 Sul, alameda 7" ),
+            
+            Animal(nome: "Desconhecido", descricao: "Cão abandonado", nomeDaFoto: "fotoDesconhecido", idade: 12, sexo: "Macho", porte: "Pequeno", especie: "Cão", usuario:"Lili", telefone: "63984562200", whatsapp:"63984442200", endereco: "Qd 404 Sul, alameda 3" ),
+            
+            Animal(nome: "Dino", descricao: "Procuro um novo dono pro Dino", nomeDaFoto: "fotoDino", idade: 3, sexo: "Macho", porte: "Medio", especie: "Papagaio", usuario:"Claudinha", telefone: "63981412247", whatsapp:"63981412247", endereco: "Qd 208 Sul, alameda 20" ),
+            
         ]
     }
 }
