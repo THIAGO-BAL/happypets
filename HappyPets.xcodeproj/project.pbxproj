@@ -15,6 +15,7 @@
 		3F04636F1E2FA304007232D0 /* PessoaJuridica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463691E2FA304007232D0 /* PessoaJuridica.swift */; };
 		3F0463701E2FA304007232D0 /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04636A1E2FA304007232D0 /* Servico.swift */; };
 		3F0463721E2FA336007232D0 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0463711E2FA336007232D0 /* Usuario.swift */; };
+		3F1CF9481E3143A800FF4E70 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CF9471E3143A800FF4E70 /* PerfilViewController.swift */; };
 		3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */; };
 		3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96D3A81E2CF7A6007C2321 /* ViewController.swift */; };
 		3F96D3AC1E2CF7A6007C2321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96D3AA1E2CF7A6007C2321 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		3F0463691E2FA304007232D0 /* PessoaJuridica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PessoaJuridica.swift; path = HappyPets/PessoaJuridica.swift; sourceTree = "<group>"; };
 		3F04636A1E2FA304007232D0 /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Servico.swift; path = HappyPets/Servico.swift; sourceTree = "<group>"; };
 		3F0463711E2FA336007232D0 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = HappyPets/Usuario.swift; sourceTree = "<group>"; };
+		3F1CF9471E3143A800FF4E70 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		3F96D3A31E2CF7A6007C2321 /* HappyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96D3A61E2CF7A6007C2321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96D3A81E2CF7A6007C2321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		3FC62A5C1E3101D3005060F5 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
+				3F1CF9471E3143A800FF4E70 /* PerfilViewController.swift */,
 			);
 			name = Perfil;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				3F04636B1E2FA304007232D0 /* Comentario.swift in Sources */,
 				3F96D3A91E2CF7A6007C2321 /* ViewController.swift in Sources */,
 				3F96D3A71E2CF7A6007C2321 /* AppDelegate.swift in Sources */,
+				3F1CF9481E3143A800FF4E70 /* PerfilViewController.swift in Sources */,
 				3F04636C1E2FA304007232D0 /* Informativo.swift in Sources */,
 				3FC62A561E30E76F005060F5 /* LocalizacaoViewController.swift in Sources */,
 				3F96D3AF1E2CF7A6007C2321 /* HappyPets.xcdatamodeld in Sources */,
