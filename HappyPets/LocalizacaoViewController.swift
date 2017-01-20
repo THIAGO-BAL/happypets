@@ -33,10 +33,10 @@ class LocalizacaoViewController: UIViewController, CLLocationManagerDelegate {
         let pin = MKPointAnnotation()
         pin.coordinate = coordenadas
         pin.title = profissional?.nome
-        pin.subtitle = profissional?.descricao
+        pin.subtitle = profissional?.endereco
         localizacaoMapView.addAnnotation(pin)
         
-        let span = MKCoordinateSpanMake(0.025, 0.025)
+        let span = MKCoordinateSpanMake(0.02, 0.02)
         let regiao = MKCoordinateRegion(center: pin.coordinate, span: span)
         localizacaoMapView.setRegion(regiao, animated: true)
     }

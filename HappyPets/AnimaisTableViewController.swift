@@ -1,21 +1,17 @@
 //
-//  AdocaoTableViewController.swift
+//  AnimaisTableViewController.swift
 //  HappyPets
 //
-//  Created by Student on 1/17/17.
+//  Created by Diorgenes Miranda on 19/01/17.
 //  Copyright © 2017 thiago-Student. All rights reserved.
 //
 
 import UIKit
 
-class AdocaoTableViewController: UITableViewController {
+class AnimaisTableViewController: UITableViewController {
 
-    var animais = [Animal]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.animais = AnimalDAO.getLista()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,32 +29,23 @@ class AdocaoTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.animais.count
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "adocaoIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        if let animalCell = cell as? AdocaoTableViewCell {
-            
-            let animal = self.animais[indexPath.row]
-            
-            animalCell.nomeLabel.text = animal.nome
-            animalCell.descricaoLabel.text = animal.especie
-            animalCell.fotoImagemView.image = UIImage(named: animal.nomeDaFoto)
-            animalCell.fotoImagemView.layer.cornerRadius = animalCell.fotoImagemView.frame.size.width / 2
-            animalCell.fotoImagemView.clipsToBounds = true
-            
-            return animalCell
-        }
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -73,7 +60,7 @@ class AdocaoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade
+            tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
@@ -95,28 +82,14 @@ class AdocaoTableViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "mostraDetalhesAnimais" {
-            if let viewAnimais = segue.destination as? DetalhesAnimalViewController {
-                if let indexPath = self.tableView.indexPathForSelectedRow {
-                    let animal = self.animais[indexPath.row]
-                    viewAnimais.animal = animal
-                }
-                
-                /*
-                let index = self.tableView.indexPathForSelectedRow?.row
-                print(index ?? 1)
-                let animal = self.animais[index!]
-                viewAnimais.animal = animal
-                */
-            }
-        }
     }
+    */
 
 }

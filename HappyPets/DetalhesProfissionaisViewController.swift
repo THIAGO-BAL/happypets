@@ -22,6 +22,8 @@ class DetalhesProfissionaisViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
+        fotoImageView.clipsToBounds = true
         fotoImageView.image = UIImage(named: (profissional?.imagem)!)
         nomeLabel.text = profissional?.nome
         descricaoLabel.text = profissional?.descricao

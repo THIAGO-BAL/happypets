@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "TelaInicialName.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "fotoLov.jpg",
       "scale" : "2x"
     },
     {

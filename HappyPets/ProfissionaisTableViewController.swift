@@ -50,6 +50,8 @@ class ProfissionaisTableViewController: UITableViewController {
             
             profissionalCell.nomeLabel.text = profissional.nome
             profissionalCell.descricaoLabel.text = profissional.descricao
+            profissionalCell.fotoImageView.layer.cornerRadius = profissionalCell.fotoImageView.frame.size.width / 2
+            profissionalCell.fotoImageView.clipsToBounds = true
             profissionalCell.fotoImageView.image = UIImage(named: profissional.imagem)
             
             return profissionalCell

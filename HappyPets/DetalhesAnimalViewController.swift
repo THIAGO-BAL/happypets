@@ -28,19 +28,20 @@ class DetalhesAnimalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nomeLabel.text = animal?.nome
-        descricaoLabel.text = animal?.descricao
+        fotoImageView.layer.cornerRadius = fotoImageView.frame.size.width / 2
+        fotoImageView.clipsToBounds = true
         fotoImageView.image = UIImage(named: (animal?.nomeDaFoto)!)
+        
+        nomeLabel.text = animal?.nome
+        descricaoLabel.text = "Descrição:" + (animal?.descricao)!
         idadeLabel.text = "\(animal?.idade)"
-        sexoLabel.text = animal?.sexo
-        especieLabel.text = animal?.especie
-        porteLabel.text = animal?.porte
-        
-        usuarioLabel.text = animal?.usuario
-        telefoneLabel.text = animal?.telefone
-        whatsappLabel.text = animal?.whatsapp
-        enderecoLabel.text = animal?.endereco
-        
+        sexoLabel.text = "Sexo: " + (animal?.sexo)!
+        especieLabel.text = "Especie: " + (animal?.especie)!
+        porteLabel.text = "Porte: " + (animal?.porte)!
+        usuarioLabel.text = "Usuario: " + (animal?.usuario)!
+        telefoneLabel.text = "Telefone: " + (animal?.telefone)!
+        whatsappLabel.text = "Whatsapp: " + (animal?.whatsapp)!
+        enderecoLabel.text = "Endereço: " + (animal?.endereco)!
     }
 
     override func didReceiveMemoryWarning() {
